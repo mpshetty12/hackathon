@@ -13,7 +13,7 @@ while(i!==4)
         i=4;
 
     }
-    else if(g<s)
+    else if(Number(g)<s)
     {
         alert("too low");
         i++;
