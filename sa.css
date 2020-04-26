@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    color:white;
+    
+}
+.bt{
+    margin:0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    color:white;
+}
+.None{
+    display:none;
+}
+.vertical{
+    border-left : 1px solid white;
+    border-right : 1px solid white;
+}
+.horizontal{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+.sec{
+    margin:0;
+    position: absolute;
+    left:68%;
+    top:44%;
+}
+.toss{
+    margin:0;
+    position: absolute;
+    left:40%;
+    top:35%;
+}
+.inp
+{
+    margin:0;
+    position: absolute;
+    left:-90%;
+    top:70%;
+}
+.dot{
+    height:200px;
+    width:200px;
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius:100%;
+    background-color: blue;
+}
+.Third{
+    margin:0;
+    position: absolute;
+    left:10%;
+    top:20%;
+}
+.mn{
+    margin:0;
+    position: absolute;
+    top:80%;
+    left:%;
+    color:white;
+}
