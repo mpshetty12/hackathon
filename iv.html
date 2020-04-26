@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="sa.css">
+        <script src="iv1.js"></script>
+    </head>
+    <body>
+        <h1 display-2 class="change" align="center">GUESS-GAME</h1>
+        <div class="First">
+               <br>
+               <br>
+               <input type="text" name="playerone" placeholder="player1-name">
+               <br>
+               <br>
+               <input type="text" name="playertwo" placeholder="player2-name">
+               <div class="button">
+                      <input type="button" class="bt btn btn-info" onclick="game();" value="START">
+               </div>
+        </div>
+           <div class="toss None">
+                  <img src="cointoss.jpg" id="click">
+                  <p>
+                    You got: <span id="result"></span>
+                  </p>
+                  <p>You choose any one below 1 or 2</p>
+                  <p>1 : secret number stabiliser</p>
+                  <p>2 : Play game</p>
+                  <div class="inp">
+                        <input type="number" id="tossnumber" placeholder="choose 1 or 2">
+                  </div>
+                 <script src="color.js"></script>
+           </div>
+               <div class="Second None">
+                   <table class="sec" style="width:30%">
+                   <tr>
+                       <th class="vertical horizontal"><span id="player1">player-1</span></th>
+                       <th class="vertical horizontal"><span id="player-2">player-2</span></th>
+                   </tr>
+                   <tr>
+                       <td class="vertical horizontal"><span id="one">0</span></td>
+                       <td class="vertical horizontal"><span id="two">0</span></td>
+                   </tr>
+                  </table>
+               </div>
+               <div class="Third None">
+                   <span class="dot">secret <span id="num">0</span></span>
+                   <input type="password" name="secret" placeholder="Enter secret number">
+                   <br>
+                   <p>Only 3 trials </p>
+               </div>
+               <div class="mn None">
+                   <p>Guess number: <span id="guesser">###</span></p>
+                   <button class="btn btn-info" onclick="nano();">guess</button>
+               </div>
+            
+    </body>
+
+    <script>
+        var myvar=setInterval(setcolor,300);
+        function setcolor(){
+            var x = document.querySelector("h1");
+            x.style.color = x.style.color == "yellow" ? "pink" : "yellow";
+        }
+    </script>
+</html>
